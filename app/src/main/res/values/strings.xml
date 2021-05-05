@@ -1,0 +1,10 @@
+<resources>
+    <string name="stringAppName">4tests</string>
+    <string name="stringMainText">Создавайте и делитесь тестами с людьми\nиз любой точки мира!</string>
+    <string name="stringCreateTest">Создать тест</string>
+    <string name="stringOpenTest">Пройти тест</string>
+    <string name="stringAbout">О приложении</string>
+    <string name="stringSelectTest">Выберите тест</string>
+    <string name="stringError">Возникла ошибка при обращении к серверу\nПопробуйте обновить приложение до последней версии</string>
+    <string name="stringNoTests">На данный момент нет доступных тестов в общем доступе</string>
+</resources>

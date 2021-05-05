@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="Theme.4tests" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+</resources>
