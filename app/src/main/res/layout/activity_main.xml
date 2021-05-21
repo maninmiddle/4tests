@@ -27,7 +27,7 @@
             app:tint="@color/colorWhite" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginHorizontal="20dp"
@@ -66,6 +66,7 @@
                 app:cornerRadius="24dp" />
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/mainJoinCreate"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:text="@string/stringCreateTest"

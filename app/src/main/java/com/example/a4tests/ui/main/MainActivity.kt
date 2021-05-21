@@ -4,6 +4,7 @@ import android.os.Bundle
 import com.example.a4tests.animator.ViewAnimator
 import com.example.a4tests.base.BaseActivity
 import com.example.a4tests.databinding.ActivityMainBinding
+import com.example.a4tests.ui.tests_create.TestsCreateActivity
 import com.example.a4tests.ui.tests_list.TestsListActivity
 
 class MainActivity : BaseActivity() {
@@ -11,7 +12,7 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        overridePendingTransition(0, 0);
+        overridePendingTransition(0, 0)
 
         val bind = ActivityMainBinding.inflate(layoutInflater)
         setContentView(bind.root)
@@ -21,6 +22,10 @@ class MainActivity : BaseActivity() {
 
         bind.mainJoinTest.setOnClickListener {
             startActivity(TestsListActivity::class.java)
+        }
+
+        bind.mainJoinCreate.setOnClickListener {
+            startActivity(TestsCreateActivity::class.java)
         }
 
         bind.mainSettings.setOnClickListener { }

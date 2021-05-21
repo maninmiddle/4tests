@@ -12,7 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.4tests"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.tests_list.TestsListActivity"></activity>
+        <activity android:name=".ui.tests_solve.TestsSolveActivity"></activity>
+        <activity android:name=".ui.tests_confirm.TestsConfirmActivity" />
+        <activity android:name=".ui.tasks_create.TasksCreateActivity" />
+        <activity android:name=".ui.tests_create.TestsCreateActivity" />
+        <activity android:name=".ui.tests_list.TestsListActivity" />
         <activity android:name=".ui.main.MainActivity" />
         <activity android:name=".ui.splash.SplashActivity">
             <intent-filter>
