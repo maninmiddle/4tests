@@ -13,6 +13,7 @@ import com.example.a4tests.ui.tests_solve.TestsSolveActivity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.util.*
 
 class TestsConfirmActivity : BaseActivity() {
 
@@ -47,10 +48,17 @@ class TestsConfirmActivity : BaseActivity() {
             } else {
                 RetrofitInstance.apiMethods.createTest(test).enqueue(object : Callback<String> {
                     override fun onResponse(call: Call<String>, response: Response<String>) {
+                        val testId = response.body()!!
+
                         Toast.makeText(
                             this@TestsConfirmActivity,
-                            getString(R.string.stringTestCreated),
-                            Toast.LENGTH_SHORT
+                            String.format(
+                                Locale.getDefault(),
+                                "%s %s",
+                                getString(R.string.stringTestCreated),
+                                testId
+                            ),
+                            Toast.LENGTH_LONG
                         ).show()
 
                         startActivity(MainActivity::class.java)
@@ -61,7 +69,7 @@ class TestsConfirmActivity : BaseActivity() {
                             if (errorHandled)
                                 break
 
-                            task.testId = response.body()!!.toInt()
+                            task.testId = testId.toInt()
 
                             RetrofitInstance.apiMethods.createTask(task)
                                 .enqueue(object : Callback<String> {

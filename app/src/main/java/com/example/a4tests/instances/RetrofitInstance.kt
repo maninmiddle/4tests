@@ -24,6 +24,9 @@ interface ApiMethods {
     @GET("getTests")
     fun getTestsList(): Call<List<TestModel>>
 
+    @GET("getTestById")
+    fun getTestById(@Query("testId") testId: Int): Call<MutableList<TestModel>>
+
     @GET("getTasks")
     fun getTasks(@Query("testId") testId: Int): Call<MutableList<TaskModel>>
 

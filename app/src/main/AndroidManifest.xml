@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.4tests"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.tests_solve.TestsSolveActivity"></activity>
+        <activity android:name=".ui.tests_result.TestsResultActivity"></activity>
+        <activity android:name=".ui.tests_solve.TestsSolveActivity" />
         <activity android:name=".ui.tests_confirm.TestsConfirmActivity" />
         <activity android:name=".ui.tasks_create.TasksCreateActivity" />
         <activity android:name=".ui.tests_create.TestsCreateActivity" />

@@ -30,7 +30,19 @@
     <string name="stringVariantNoText">У одного из вариантов ответа не указан текст</string>
     <string name="stringConfirm">Подтвердите данные</string>
     <string name="stringTasksCount">Количество вопросов</string>
-    <string name="stringTestCreated">Тест был успешно создан</string>
+    <string name="stringTestCreated">Тест был успешно создан\nЕго ID:</string>
     <string name="stringStart">Начать</string>
     <string name="stringQuestionNumber">Вопрос №</string>
+    <string name="stringTestEnded">Тест завершен</string>
+    <string name="stringRightAnswers">Правильных ответов:</string>
+    <string name="stringTotalTasksCount">Всего вопросов:</string>
+    <string name="stringYourMark">Ваша оценка:</string>
+    <string name="stringEnterPassword">Введите пароль:</string>
+    <string name="stringPasswordHint">Пароль</string>
+    <string name="stringCancel">Отмена</string>
+    <string name="stringIncorrectPassword">Неверный пароль!</string>
+    <string name="stringEnterId">Введите ID теста:</string>
+    <string name="stringSearch">Поиск</string>
+    <string name="stringID">ID</string>
+    <string name="stringNotFoundTest">Тест с данным ID не был найден</string>
 </resources>
